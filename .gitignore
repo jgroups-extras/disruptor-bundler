@@ -7,6 +7,7 @@
 .settings/
 .idea/
 .idea
+.ant-targets-build.xml
 .DS_Store
 classes/
 build.properties
