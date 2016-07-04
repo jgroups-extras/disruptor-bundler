@@ -1,5 +1,5 @@
 
-package org.jgroups_extras;
+package org.jgroups.disruptor;
 
 import com.lmax.disruptor.EventFactory;
 import com.lmax.disruptor.EventHandler;
@@ -15,8 +15,8 @@ import org.jgroups.util.DefaultThreadFactory;
 
 /**
  * Implementation of a {@link org.jgroups.protocols.Bundler} with LMAX's Disruptor. To use it in JGroups, either
- * set bundler_type="org.jgroups_extras.DisruptorBundler" in TP (UDP or TCP), or change it dynamically via probe.sh:<p/>
- * probe.sh -cluster default op=UDP.bundler["org.jgroups_extras.DisruptorBundler"]<p/>
+ * set bundler_type="org.jgroups.DisruptorBundler" in TP (UDP or TCP), or change it dynamically via probe.sh:<p/>
+ * probe.sh -cluster default op=UDP.bundler["org.jgroups.DisruptorBundler"]<p/>
  * Note that this impl works against 3.6.x, and hasn't been tested against 4.0.
  * @author Bela Ban
  */
