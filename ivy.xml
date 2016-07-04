@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info organisation="org.jgroups_extras"
+          module="disruptor-bundler"
+          revision="1.0.0-SNAPSHOT"/>
+
+    <dependencies>
+        <dependency org="com.lmax"      name="disruptor"              rev="3.+"/>
+        <dependency org="org.jgroups"   name="jgroups"                rev="3.6.11-SNAPSHOT"/>
+        <!--<exclude org="*" ext="*" type="source"/>-->
+        <exclude org="*" ext="*" type="javadoc"/>
+    </dependencies>
+</ivy-module>
